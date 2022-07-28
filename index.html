@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Calculator
+        </title>
+    </head>
+    <body>
+        <div class="bubbles">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
+            <span class="five"></span>
+            <span class="six"></span>
+            <span class="seven"></span>
+            <span class="eight"></span>
+        </div>
+        <div class="container main">
+            <div id="result">
+                <div id="input">
+                    <p id="inputs"></p>
+                </div>
+                <div id="output">
+                    <p id="outputs"></p>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td><button id="AC" class="operators" style="color: orangered;">AC</button></td>
+                    <td><button id="DEL" class="operators" style="color: orangered;">DEL</button></td>
+                    <td><button id="%" class="operators" style="color: orangered;">%</button></td>
+                    <td><button id="/" class="operators" style="color: orangered;">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="7" class="numbers">7</button></td>
+                    <td><button id="8" class="numbers">8</button></td>
+                    <td><button id="9" class="numbers">9</button></td>
+                    <td><button id="*" class="operators" style="color: orangered;">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" class="numbers">4</button></td>
+                    <td><button id="5" class="numbers">5</button></td>
+                    <td><button id="6" class="numbers">6</button></td>
+                    <td><button id="-" class="operators" style="color: orangered;">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1" class="numbers">1</button></td>
+                    <td><button id="2" class="numbers">2</button></td>
+                    <td><button id="3" class="numbers">3</button></td>
+                    <td><button id="+" class="operators" style="color: orangered;">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="." class="operators">.</button></td>
+                    <td><button id="0" class="numbers">0</button></td>
+                    <td><button id="00" class="numbers">00</button></td>
+                    <td><button id="=" class="operators"onclick="result()" style="color: orangered;">=</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p> Design and coded by Sakshi Godse </p>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

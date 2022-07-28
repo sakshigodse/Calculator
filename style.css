@@ -1,0 +1,164 @@
+body{
+    background: radial-gradient(#17ebddc9,#ff095e96);
+    overflow: hidden;
+}
+.bubbles{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.bubbles span{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    animation: move 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes move {
+    100%{
+        transform: translateY(-90vh);
+    }
+}
+.bubbles span.one{
+    animation-delay: 6s;
+    transform: scale(1.15);
+}
+.bubbles span.two{
+    animation-delay: 0.5s;
+    transform: scale(2.15);
+}
+.bubbles span.three{
+    animation-delay: 3.7s;
+    transform: scale(1.05);
+}
+.bubbles span.four{
+    animation-delay: 2s;
+    transform: scale(0.55);
+}
+.bubbles span.five{
+    animation-delay: 6s;
+    transform: scale(1.05);
+}
+.bubbles span.six{
+    animation-delay: 4s;
+    transform: scale(1.25);
+}
+.bubbles span.seven{
+    animation-delay: 3s;
+    transform: scale(1.5);
+}
+.bubbles span.eight{
+    animation-delay: 0.3s;
+    transform: scale(1.45);
+}
+.bubbles span:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 40%;
+    transform: skew(45deg) translateX(150px);
+    background: rgba(255, 255, 255, 0.15);
+    animation: mirror 3s linear infinite;
+}
+@keyframes mirror{
+    100%{
+        transform: translateX(-450px);
+    }
+}
+.bubbles span.one:before{
+    animation-delay: 1.5s;
+}
+.bubbles span.two:before{
+    animation-delay: 3.5s;
+}
+.bubbles span.three:before{
+    animation-delay: 2.5s;
+}
+.bubbles span.four:before{
+    animation-delay: 7.5s;
+}
+.bubbles span.five:before{
+    animation-delay: 4.5s;
+}
+.bubbles span.six:before{
+    animation-delay: 0.5s;
+}
+.bubbles span.seven:before{
+    animation-delay: 6s;
+}
+.bubbles span.eight:before{
+    animation-delay: 2s;
+}
+
+.main{
+    width: 360px;
+    height: 520px;
+    padding: 15px;
+    margin-top: 30px!important;
+    margin: 0px auto;
+    border-radius: 12px;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 1.15)!important;
+
+}
+table{
+    width: 100%;
+}
+td{
+    width: 25%;
+}
+button{
+    width: 90%;
+    background-color: black;
+    color: white;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+button:hover{
+    box-shadow: 0px 0px 15px #ff0000;
+}
+#result{
+    height: 120px;
+}
+#input{
+    text-align: right;
+    height: 20px;
+    margin: -20px 20px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: -30px 20px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.footer{
+    background: transparent;
+    padding: 6px;
+    margin-top: 10px;
+	
+}
+.footer p{
+	color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+
